@@ -1,8 +1,10 @@
 ---
 import MdxPageLayout from "astro-theme-university/layouts/MdxPageLayout.astro";
+import CourseAtmosphere from "../components/CourseAtmosphere.astro";
 import { siteConfig } from "../site-config";
 ---
 
 <MdxPageLayout siteConfig={siteConfig} {...Astro.props}>
+  <CourseAtmosphere stage="facade" seed={Astro.url.pathname} />
   <slot />
 </MdxPageLayout>

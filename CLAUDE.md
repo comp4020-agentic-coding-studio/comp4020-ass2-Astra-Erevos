@@ -27,6 +27,15 @@ build.
   the sequence across many repetitions (off-screen content, steps collapsing
   into one, dead ends).
 
+## Visual/UX acceptance is user-led
+
+- Visual and UX sign-off on this project is done by the student, in a real
+  browser, not by the agent. For any change that affects rendered appearance,
+  run the dev server and hand back the exact URL(s) to check — do not install
+  Playwright/Chromium system dependencies to take headless screenshots, and do
+  not treat a headless screenshot as a substitute for the student's own
+  visual judgement.
+
 ## Project-specific rules learned from the first public CI run
 
 - CI's `check` job only runs once the repo is public, so a check declared as

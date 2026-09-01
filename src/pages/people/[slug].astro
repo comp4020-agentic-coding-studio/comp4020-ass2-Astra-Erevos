@@ -2,6 +2,7 @@
 import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import CourseAtmosphere from "../../components/CourseAtmosphere.astro";
 import { siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
@@ -37,6 +38,7 @@ const description = person.data.description;
   heroImageAlt={photoAlt}
   {...siteConfig}
 >
+  <CourseAtmosphere stage="facade" seed={person.id} />
   <dl>
     {roleLabel && (
       <>

@@ -5,8 +5,10 @@ import RelatedContent from "astro-course-university/components/RelatedContent.as
 import SpecList from "astro-course-university/components/SpecList.astro";
 import Callout from "astro-theme-university/components/Callout.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import CourseAtmosphere from "../../components/CourseAtmosphere.astro";
 import MarkingModel from "../../components/MarkingModel.astro";
 import { formatCourseDate } from "../../lib/dates";
+import { weekToStage } from "../../lib/stage";
 import { graphCollections, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
@@ -19,13 +21,16 @@ export async function getStaticPaths() {
 
 const { assessment } = Astro.props;
 const { Content } = await render(assessment);
+const stage = weekToStage(assessment.data.week);
 ---
 
 <ContentLayout
   title={assessment.data.title}
   description={assessment.data.description}
+  mainAttrs={{ "data-stage": stage }}
   {...siteConfig}
 >
+  <CourseAtmosphere stage={stage} seed={assessment.id} />
   {
     assessment.data.draft && (
       <Callout type="warning">

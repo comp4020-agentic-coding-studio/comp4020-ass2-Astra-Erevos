@@ -4,8 +4,10 @@ import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
+import CourseAtmosphere from "../../components/CourseAtmosphere.astro";
 import TeachingTeam from "../../components/TeachingTeam.astro";
 import { formatCourseDate } from "../../lib/dates";
+import { weekToStage } from "../../lib/stage";
 import { graphCollections, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
@@ -16,9 +18,16 @@ export async function getStaticPaths() {
 const { lecture } = Astro.props;
 const { Content } = await render(lecture);
 const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
+const stage = weekToStage(lecture.data.week);
 ---
 
-<ContentLayout title={title} description={lecture.data.description} {...siteConfig}>
+<ContentLayout
+  title={title}
+  description={lecture.data.description}
+  mainAttrs={{ "data-stage": stage }}
+  {...siteConfig}
+>
+  <CourseAtmosphere stage={stage} seed={lecture.id} />
   <p><strong>{formatCourseDate(lecture.data.date)}</strong></p>
   {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
   <Content />
