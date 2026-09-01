@@ -61,3 +61,9 @@ Claude proposed three visual directions: a system-driven colour progression, acc
 I also separated the site into facade and course pages. Homepage, People, Policies and collection indexes remain formal, while dated course pages evolve with their week. I deliberately rejected stage previews on collection cards to preserve the contrast: the university keeps its facade; the course is where the cat lives.
 
 Manual browser review then changed the implementation. The original floating facade paw was visually right but collided with the hero. A technically more robust replacement moved it into document flow, but this lost the hanging/floating quality I wanted, so I rejected that solution. I restored the approved floating mechanism and moved the paw to the bottom-left, where it avoids the sticky navigation and hero while preserving the original visual idea. The final A+B system was then accepted through manual browser inspection. Evidence: [3a11e61](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Astra-Erevos/commit/3a11e6181c8f4c1a7d9fb131a9440211d732b7e8).
+
+## Correcting an over-tightened course contract
+
+`/start` interpreted A2's "12 dated teaching weeks" requirement as "12 weeks, each with a session", and generated a course-contract test enforcing that. Re-reading the brief against the real COMP4020/8020 course structure showed this was a stronger promise than the brief actually asks for: the fixed commitment is a dated lecture every week, not a Care Lab (the collection technically named `sessions`) mechanically attached to every one of them.
+
+I corrected the test to require a lecture in every week from 1 to 12, and dropped the per-week session requirement — Care Labs now accompany lectures where the teaching logic calls for one, not by a fixed weekly cadence. Evidence: [a456a77](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Astra-Erevos/commit/a456a77fe99ca9c93fd465ff8e69c782f2696271).
