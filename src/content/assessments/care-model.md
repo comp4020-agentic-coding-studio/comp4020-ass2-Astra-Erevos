@@ -1,7 +1,7 @@
 ---
 title: The Care Model
 description:
-  Turn Catwatch's observations into a revisable model of one cat's
+  Turn Catwatch's observations into a revisable model of your human cat's
   preferences and history — one that survives contact with change
 week: 4
 due: 2027-04-21T08:30:00+10:00
@@ -18,7 +18,7 @@ marking:
     - name: The model is legible to someone who did not build it
       weight: 15
 spec:
-  - a structured model of one cat, built from Catwatch's observations
+  - a structured model of your human cat, built from Catwatch's observations
   - at least one entry the model has revised, with the reason for the
     revision
   - a short note on what the model still does not know
@@ -29,30 +29,54 @@ related:
   - lectures/week-04
 ---
 
-## The brief
+## Your fieldwork
 
-> Turn what Catwatch taught you into a model of one cat — one you expect to
-> be wrong about, and plan to revise.
+> Turn what Catwatch taught you into a model of your human cat — one you
+> expect to be wrong about, and plan to revise.
 
-Catwatch trained you to separate observed from inferred. The Care Model asks
-what you do with that: build a structured account of one cat's history,
-patterns and preferences that is explicitly provisional. A model that cannot
-be revised is just a profile wearing a model's clothes.
+Catwatch trained you to keep observed and inferred apart. The Care Model
+asks what you do with everything that produced: build a structured, honest
+account of this human cat that grows directly out of your own log — not a
+fresh character study invented for this assignment. A model that cannot be
+revised is just a profile wearing a model's clothes.
 
-Released Wed 17 Mar 2027, 09:00 — once Catwatch has moved into its Week 4
-showcase — this assignment spans the two-week teaching break. The gap in
-contact is part of the test: a model that only works while you are watching
-every day is not yet a model of the cat, it is a model of your attention.
+Released Wed 17 Mar 2027, 09:00, immediately after Catwatch closes. This
+fieldwork spans the two-week teaching break. The gap in
+contact is part of the test: a model that only holds together while you are
+watching every day is not yet a model of your human cat, it is a model of
+your own attention.
 
-## What you submit
+## What your model should hold
 
-A structured model (whatever form suits the case: a document, a diagram, a
-short set of rules — the form is yours to justify) covering at least:
-recurring patterns, one-off events that should not be generalised from,
-shared conventions between the cat and its person, and anything still
-genuinely uncertain. Show at least one place where new information forced a
-revision, and say why the old entry was wrong rather than just replacing it
-silently.
+Cover, at minimum:
+
+- **recurring patterns** — what shows up often enough that you should expect
+  it again;
+- **one-off events** — real, but not to be generalised from;
+- **shared conventions** — the private jokes and shorthand that only make
+  sense between you and this human cat;
+- **preferences and routines** — the shape of an ordinary day or week with
+  them;
+- **tentative interpretations** — held as readings, not upgraded to fact;
+- **what you still do not know** — named honestly, not papered over.
+
+The question behind all of it:
+
+> What should you carry forward, and what must remain revisable?
+
+Later in the semester you will meet a sharper version of this question,
+sorting what you know into what to **keep**, what to **hold lightly**, and
+what to **let expire**. You do not need that framework to submit good work
+now — but a model built with revision already in mind will still be
+standing when you do.
+
+## What you hand in
+
+A structured model — a document, a diagram, a short set of rules, whatever
+form you can justify — built from Catwatch's observations. Show at least one
+entry the model has revised, with the reason for the revision, not a silent
+replacement. Include a short, honest note on what the model still does not
+know.
 
 ## Where this goes next
 

@@ -55,8 +55,8 @@ export const courseMeta = slopCourseMetaSchema.parse({
   startDate: "2027-02-22",
   endDate: "2027-05-28",
   description:
-    "Personalised emotional support for artificial agents, taught through the discipline of learning one " +
-    "particular cat. The starting claim: there is no universal cat — good care comes from understanding " +
-    "one animal over time, not from a script written for everybody.",
+    "Personalised emotional support for artificial agents: this course teaches an agent to care for one " +
+    "human cat — a human who turns to AI for company and comfort rather than tasks. There is no universal " +
+    "cat: good care comes from learning one person over time.",
   tags: ["personalisation", "long-term care", "AI companionship"],
 }) satisfies CourseMetaInput;

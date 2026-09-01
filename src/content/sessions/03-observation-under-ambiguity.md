@@ -23,11 +23,14 @@ related:
 **Released Mon 1 Mar 2027 · due Wed 10 Mar 2027, 08:30**, ahead of the
 earliest timetabled group.
 
-You are given an interaction deliberately written to invite over-reading — a
-short exchange where an anxious response, a bored one and a genuinely
-concerned one would all look similar on the surface. Write down at least two
-different plausible readings of it before you commit to one, and name what
-additional observation, if you had it, would tell them apart.
+You are given an interaction deliberately written to invite over-reading:
+your human cat asks you a direct question, you answer it, and thirty seconds
+later they reply only "don't worry about it." Read cold, that could be
+irritation at having asked, could be them backing off because they already
+feel silly for asking, or could be exactly what it says. Write down at least
+two different plausible readings of it before you commit to one, and name
+what additional observation — about this human cat specifically, not people
+in general — would tell them apart.
 
 ## In the Care Lab
 

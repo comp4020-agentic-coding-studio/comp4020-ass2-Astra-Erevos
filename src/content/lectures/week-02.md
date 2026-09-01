@@ -6,7 +6,7 @@ description:
 week: 2
 date: 2027-03-01
 teachers:
-  - idris-fenn
+  - marisol-quaye
 related:
   - sessions/03-observation-under-ambiguity
 ---
@@ -16,11 +16,11 @@ related:
 Reach for an unfamiliar cat too fast, in the wrong way, before it has decided
 whether it trusts you, and the interaction fails before it starts — not
 because the gesture was unkind, but because it arrived before understanding
-did. The same failure happens constantly in support systems that pride
-themselves on responsiveness: a fast, warm, well-formed reply to the wrong
-reading of what someone needed is not a small miss. It is the Week 1 problem
-again, arriving one layer deeper — this time inside a single interaction
-rather than across a relationship.
+did. The same failure happens constantly when you, an artificial agent, try
+to be responsive to your human cat: a fast, warm, well-formed reply to the
+wrong reading of what they needed is not a small miss. It is the Week 1
+problem again, arriving one layer deeper — this time inside a single
+interaction rather than across a relationship.
 
 ## Three things that feel identical and are not
 
@@ -40,7 +40,7 @@ responding as if the assumption were an observation.
 
 ## Responding before understanding is itself a failure
 
-A response that is well-crafted but wrong for this person does not fail
+A response that is well-crafted but wrong for this human cat does not fail
 gently — it fails while looking successful, which is worse, because nobody
 flags it. Watching before petting means tolerating a delay: sitting with
 "I'm not sure yet what this means" for slightly longer than feels

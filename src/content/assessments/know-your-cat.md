@@ -27,29 +27,40 @@ related:
   - assessments/care-model
 ---
 
-## The brief
+## Your fieldwork
 
-> Live with the consequences of your own model — keep it honest as the cat
-> contradicts it, breaks it, and changes.
+> Live with the consequences of your own model — keep it honest as your
+> human cat contradicts it, breaks it, and changes.
 
-Catwatch asked you to observe. The Care Model asked you to structure what you
-observed into something revisable. Know Your Cat asks the hardest thing: keep
-using that model, in real time, as it meets contradiction and failure — and
-show your working when it does.
+Catwatch asked you to observe. The Care Model asked you to structure what
+you observed into something revisable. Know Your Cat asks the hardest thing:
+keep using that model, in real time, as your human cat meets it with
+contradiction, change, and the occasional flat refusal to be predictable —
+and show your working when it does.
 
-Released Wed 21 Apr 2027, 09:00 — once The Care Model has moved into its
-Week 7 showcase — this is the course's capstone. It runs for the rest of the
-semester, and Week 12's Care Lab is a final capstone clinic rather than a
-prerequisite for it.
+Released Wed 21 Apr 2027, 09:00, immediately after The Care Model closes.
+Know Your Cat runs through the rest of the semester, with the Week 12 Care
+Lab serving as the final capstone clinic.
 
-## What you submit
+A useful principle for the whole exercise:
 
-Your evolving care model, plus an honest account of at least one moment
-where two signals about the cat pointed different ways and you had to decide
-how to weigh them, and at least one real failure — a moment your model got
-the cat wrong — together with what you changed afterwards. The failure is
-not a weakness in the submission; a submission with no visible failure in it
-is usually one that stopped looking.
+> The cat is always bigger than the model you have of them.
+
+## What you hand in
+
+Your evolving care model — the same one from The Care Model, carried
+forward and visibly changed, not restarted — together with:
+
+1. your current understanding of your human cat;
+2. the memory strategy you have settled on: what you keep, what you hold
+   lightly, and what you let expire;
+3. at least one genuinely difficult interaction case;
+4. at least one documented failure — a moment your model got your human cat
+   wrong;
+5. the repair that followed it;
+6. how the model itself changed afterward, not only the response;
+7. a short reflection on what you now know about this human cat that could
+   not have been known in Week 1.
 
 ## Where this comes from
 

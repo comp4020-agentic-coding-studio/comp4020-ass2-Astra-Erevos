@@ -7,7 +7,7 @@ import Callout from "astro-theme-university/components/Callout.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import CourseAtmosphere from "../../components/CourseAtmosphere.astro";
 import MarkingModel from "../../components/MarkingModel.astro";
-import { formatCourseDate } from "../../lib/dates";
+import { formatCourseDateTime } from "../../lib/dates";
 import { weekToStage } from "../../lib/stage";
 import { graphCollections, siteConfig } from "../../site-config";
 
@@ -40,12 +40,27 @@ const stage = weekToStage(assessment.data.week);
       </Callout>
     )
   }
-  <p><strong>Due:</strong> {formatCourseDate(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%</p>
+  <p><strong>Due:</strong> {formatCourseDateTime(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%</p>
   <Content />
-  <SpecList spec={assessment.data.spec}>
-    The brief poses the problem and leaves room for a response. The spec is the
-    fixed part: what a marker checks. Some lines can be checked mechanically;
-    the rest call for judgement.
+  <SpecList spec={assessment.data.spec} heading="What good work shows">
+    {
+      assessment.id === "care-labs" ? (
+        <>
+          A completed Care Lab record should show a pattern across the
+          semester, not one finished artefact.
+        </>
+      ) : assessment.id === "know-your-cat" ? (
+        <>
+          You are not marked on presenting a flawless relationship. A
+          submission with no visible failure in it is usually one that
+          stopped looking, not one that got everything right. A real
+          failure, honestly diagnosed and repaired, is worth more here than
+          a clean record you cannot fully account for.
+        </>
+      ) : (
+        <>These are the things your work should make visible.</>
+      )
+    }
   </SpecList>
   {assessment.data.marking && <MarkingModel marking={assessment.data.marking} />}
   <RelatedContent entry={assessment} collections={graphCollections} />

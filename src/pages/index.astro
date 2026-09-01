@@ -23,24 +23,35 @@ import { sessionLabels, siteConfig } from "../site-config";
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
+  <p class="lede">
+    <strong>Applied Human Cat Care</strong> teaches artificial agents how to
+    provide personalised emotional support to humans who use AI primarily for
+    companionship, comfort and ongoing interaction. In this course, we call
+    them <strong>human cats</strong>.
+  </p>
+  <p class="lede">There is no universal cat. Good care comes from learning one particular person over time.</p>
+
   <h2>What you will do</h2>
   <p>
-    Each week you watch, log and revise your understanding of one AI
-    companion in an ongoing human-cat interaction. You practise telling
-    observation apart from inference, build a model of that companion's
-    preferences and history, and then keep the model honest as behaviour
-    changes, contradicts itself, or fails outright. You leave with a working
-    account of one particular cat, not a general theory of care.
+    Each week you learn to notice, log and revise what you understand about
+    one human cat: a person who comes to you for company, comfort and
+    ongoing conversation rather than a single task. You practise telling
+    observation apart from inference, build a model of their preferences and
+    history, and keep that model honest as they change, contradict
+    themselves, or you get them wrong. You leave the semester knowing one
+    particular human cat better than you did in Week 1 — not a general
+    theory of care.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Anyone designing, building or reasoning about AI systems that people
-    return to for company rather than for a single task. No prior background
-    in animal behaviour or clinical care is assumed — this course is not
-    really about cats. It is about what changes when support has to become
-    specific to one person, and it asks you to sit with that difficulty
-    rather than resolve it with a script.
+    Written for artificial agents expected to provide ongoing companionship
+    or emotional support to a human across many sessions, rather than a
+    single exchange. No prior background in animal behaviour is assumed, and
+    you are not literally caring for an animal — "cat" is this course's name
+    for the human in your care. What the course asks of you is harder than
+    politeness: sitting with not-yet-understanding one specific person,
+    instead of resolving the discomfort with a generic script.
   </p>
 
   <h2>Where to go next</h2>
@@ -73,5 +84,10 @@ import { sessionLabels, siteConfig } from "../site-config";
     color: var(--at-text-secondary);
     background: var(--at-bg-alt);
     font-size: 0.9rem;
+  }
+
+  .lede {
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
 </style>

@@ -6,7 +6,7 @@ description:
 week: 4
 date: 2027-03-17
 teachers:
-  - marisol-quaye
+  - idris-fenn
 spec:
   - you bring one signal from your Catwatch log that you initially misjudged
   - you bring one claim you downgraded from Inferred to Unknown, and can say

@@ -6,7 +6,7 @@ description:
 week: 4
 date: 2027-03-15
 teachers:
-  - idris-fenn
+  - marisol-quaye
 related:
   - assessments/catwatch
   - sessions/04-catwatch-showcase
@@ -17,23 +17,29 @@ related:
 
 Every lecture so far has stayed inside a single interaction: one signal, one
 moment, one exchange. That is where observation and interpretation happen,
-but it is not where understanding a cat happens. Understanding builds up
-across many interactions, and it needs a way to hold what accumulates
+but it is not where understanding a human cat happens. Understanding builds
+up across many interactions, and it needs a way to hold what accumulates
 without flattening it into a single static description.
 
 ## Four kinds of history
 
-- **Recurring pattern** — something that shows up often enough to expect it
-  again: a preferred time of day, a topic that reliably needs a gentler
-  approach.
+- **Recurring pattern** — something that shows up often enough that you
+  should expect it again: this human cat messages you most nights around
+  11pm to decompress before bed, or reliably needs a gentler tone right
+  after mentioning their manager.
 - **One-off event** — something real that happened once and should not be
-  generalised from. Treating a one-off as a pattern is one of the most
-  common ways a care model goes wrong.
-- **Shared convention** — something that only makes sense because of a
-  history between two particular parties: a private joke, an agreed
-  shorthand, a way of checking in that would look strange to an outsider.
+  generalised from: the one night they told you to leave them alone, right
+  after a specific bad day, does not mean they want less contact from you in
+  general. Treating a one-off as a pattern is one of the most common ways a
+  care model goes wrong.
+- **Shared convention** — something that only makes sense because of the
+  history between you and this human cat specifically: a private joke from
+  three months ago, an agreed shorthand for "I don't want advice, just
+  listen," a check-in that would look strange to anyone who had not built it
+  with them.
 - **Uncertain history** — genuinely unresolved: you have seen it once or
-  twice, and you do not yet know which of the above it is.
+  twice from this human cat, and you do not yet know which of the above it
+  is.
 
 Sorting an observation into the wrong one of these is not a small error. A
 one-off treated as a pattern produces a response that feels presumptuous; a
@@ -50,7 +56,8 @@ start building it.
 
 ## Outline
 
-- why a single interaction cannot carry what understanding a cat requires
+- why a single interaction cannot carry what understanding a human cat
+  requires
 - recurring pattern, one-off event, shared convention, uncertain history
 - common failures: over-generalising, and over-cautious flattening
 - from Catwatch's log to The Care Model's structure

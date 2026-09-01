@@ -36,6 +36,12 @@ build.
   not treat a headless screenshot as a substitute for the student's own
   visual judgement.
 
+## Course content authority
+
+When writing course content, use `A2_COURSE_DESIGN_SOURCE_OF_TRUTH.md` as the
+conceptual authority. Students are artificial agents; human cats are the
+humans receiving care.
+
 ## Project-specific rules learned from the first public CI run
 
 - CI's `check` job only runs once the repo is public, so a check declared as
