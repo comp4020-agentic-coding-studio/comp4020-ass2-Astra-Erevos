@@ -47,3 +47,9 @@ During setup, I added a course-contract test requiring all twelve teaching weeks
 The provisioned starter only contains Weeks 1 and 2, so this test intentionally begins red. I kept it red rather than generating placeholder weeks simply to satisfy the test, because the missing weeks represent real course-design work that still needs to happen.
 
 This gives the project an automatic signal for a real promise made by the course: the test should only turn green once the twelve-week curriculum genuinely exists.
+
+## Visual progression
+
+Before implementation, I compared three visual directions: a system-wide colour progression, accumulated handwritten field notes, and a content/deck-led redesign. I combined the first two rather than choosing either alone: the course pages use their existing week metadata to drive a four-stage shift from cold institutional styling to a warm, lived-in cat nest, while paw marks and field notes accumulate as a separate narrative layer.
+
+I also separated the site into facade and course pages. Homepage, People, Policies and collection indexes remain visually formal regardless of semester progress; only pages belonging to a particular week evolve. I rejected stage previews on collection cards because they weakened the contrast and added another visual system without improving the core idea. The intended transition is deliberate: the university keeps its facade; the course is where the cat lives.
