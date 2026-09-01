@@ -14,15 +14,14 @@ interface CourseApi {
 
 const api = JSON.parse(readFileSync(resolve("dist/api/index.json"), "utf8")) as CourseApi;
 
-const sessions = api.nodes.filter((node) => node.type === "sessions");
 const lectures = api.nodes.filter((node) => node.type === "lectures");
 const assessments = api.nodes.filter((node) => node.type === "assessments");
 
 describe("twelve dated teaching weeks", () => {
-  it("has a session in every week from 1 to 12", () => {
-    const weeks = new Set(sessions.map((node) => node.meta?.week));
+  it("has a lecture in every week from 1 to 12", () => {
+    const weeks = new Set(lectures.map((node) => node.meta?.week));
     for (let week = 1; week <= 12; week += 1) {
-      expect(weeks.has(week), `no session scheduled for week ${week}`).toBe(true);
+      expect(weeks.has(week), `no lecture scheduled for week ${week}`).toBe(true);
     }
   });
 });
