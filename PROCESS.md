@@ -67,3 +67,11 @@ Manual browser review then changed the implementation. The original floating fac
 `/start` interpreted A2's "12 dated teaching weeks" requirement as "12 weeks, each with a session", and generated a course-contract test enforcing that. Re-reading the brief against the real COMP4020/8020 course structure showed this was a stronger promise than the brief actually asks for: the fixed commitment is a dated lecture every week, not a Care Lab (the collection technically named `sessions`) mechanically attached to every one of them.
 
 I corrected the test to require a lecture in every week from 1 to 12, and dropped the per-week session requirement — Care Labs now accompany lectures where the teaching logic calls for one, not by a fixed weekly cadence. Evidence: [a456a77](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Astra-Erevos/commit/a456a77fe99ca9c93fd465ff8e69c782f2696271).
+
+## Curriculum architecture pivot
+
+That sensor correction turned out to be the first sign of a larger pivot, not an isolated fix. `/start` had concretised "12 dated teaching weeks" as "every week must have a session"; re-reading the published brief showed that over-constrained the actual requirement. `sessions` stays the repo's internal technical collection name, but the student-facing identity is redesigned as Care Labs.
+
+Rather than the six checkpoint-style sessions I first sketched, I based the rhythm on a real lecture/tutorial structure: Week 1 is lecture-only, and Weeks 2–12 run continuous Care Labs, each practising the *previous* week's lecture so no timetabled group depends on having already sat that week's lecture. An ordinary week's task releases the prior Monday and is due 08:30 the following Wednesday, ahead of that week's earliest timetabled group. Eleven Care Labs run in total, best 10 of 11 = 10% of the course; Weeks 4 and 7 replace their independent task with an assignment showcase, and Week 12 doubles as a recovery opportunity.
+
+The semester metadata already supported a deliberate two-week teaching break between Weeks 6 and 7, and The Care Model is the one major assignment designed to span it. The major-assignment progression remains Observe (Catwatch) → Model (The Care Model) → Live with the consequences of the model (Know Your Cat).
