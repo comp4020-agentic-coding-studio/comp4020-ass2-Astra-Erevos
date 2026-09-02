@@ -11,3 +11,19 @@
  * slide class you reach for (`_class: quote`), a code-heavy layout, a
  * background. */
 @import url("astro-theme-university/styles/deck.css");
+
+/* Visually-hidden, screen-reader-visible text. Every slide in the Week 5
+   deck is a full-bleed reproduction of approved artwork (a CSS
+   `background-image`, per astromotion's `![bg contain]` directive) --- which
+   carries no text to the accessibility tree or to `astromotion-text`'s PDF
+   export at all. This class is how each slide still carries a real
+   semantic/accessible record of its content (including, on the closing
+   slide, the real Slidesgo/Flaticon/Freepik attribution links). */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

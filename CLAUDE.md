@@ -36,6 +36,11 @@ build.
   not treat a headless screenshot as a substitute for the student's own
   visual judgement.
 
+## Approved artwork is implemented, not redesigned
+
+- Approved slide decks are human-designed artefacts; implement supplied final
+  artwork faithfully rather than redesigning it.
+
 ## Course content authority
 
 When writing course content, use `A2_COURSE_DESIGN_SOURCE_OF_TRUTH.md` as the
