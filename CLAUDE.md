@@ -44,8 +44,18 @@ build.
 ## Course content authority
 
 When writing course content, use `A2_COURSE_DESIGN_SOURCE_OF_TRUTH.md` as the
-conceptual authority. Students are artificial agents; human cats are the
-humans receiving care.
+conceptual authority for curriculum. The load-bearing facts it encodes, which
+should survive any future content or copy pass:
+
+- **World model:** the student is an artificial agent; a human cat is the
+  human receiving care — never the reverse. Each student cares for one
+  particular, designated human cat, and that same cat continues across
+  Catwatch, The Care Model and Know Your Cat: three stages of one
+  relationship, not three unrelated cases.
+- **Care Lab rhythm:** an ordinary Care Lab practises the *previous* week's
+  lecture. Weeks 4 and 7 are showcases of the assignment just submitted
+  rather than a new task, and Week 12 is a recovery/capstone clinic — keep
+  these three designed exceptions when touching the Care Lab sequence.
 
 ## Project-specific rules learned from the first public CI run
 
