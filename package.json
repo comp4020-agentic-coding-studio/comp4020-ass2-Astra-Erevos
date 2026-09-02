@@ -10,6 +10,7 @@
     "typecheck": "astro check",
     "check": "pnpm typecheck && pnpm test",
     "check:evidence": "node scripts/check-evidence.ts",
+    "import:deck": "node scripts/import-deck.ts",
     "test": "pnpm build && vitest run spec",
     "test:template": "vitest run scripts"
   },
@@ -27,6 +28,7 @@
     "@astrojs/check": "^0.9.9",
     "@types/node": "^24.0.0",
     "lightningcss": "^1.32.0",
+    "mupdf": "^1.28.0",
     "pagefind": "^1.5.2",
     "typescript": "^6.0.3",
     "vitest": "^4.1.10"

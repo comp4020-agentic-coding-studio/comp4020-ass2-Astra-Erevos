@@ -171,6 +171,42 @@ A deck is not a content-collection entry, so it has no `related:` edges. Link it
 from its lecture page with a markdown link (`[Slides](/decks/week-01/)`), which
 the build rewrites for the base path.
 
+### Importing an approved artwork PDF as a deck
+
+Week 5's deck (`src/decks/week-05.deck.mdx`) is image-backed: a design pass
+happens outside this repo, you approve a final PDF, and the deck becomes a
+faithful, full-bleed rendering of that artwork --- one `![bg contain]` image
+per page, with a hidden `.sr-only` block per slide carrying that page's real
+text and links for screen readers and text export. Claude's role in that
+workflow is implementation and verification, not slide design.
+
+`scripts/import-deck.ts` automates it. Given an approved PDF:
+
+```
+pnpm import:deck -- --week 6 --pdf local-reference/week6/approved.pdf
+```
+
+It renders every page to a 1920px-wide AVIF under
+`src/decks/assets/week-06/slide-NN.avif` (nothing else in the build needs to
+know about a new week --- astromotion's asset collector copies any file under
+`src/decks/` verbatim), writes `src/decks/week-06.deck.mdx` in the same
+full-bleed convention as Week 5, and validates its own output: generated slide
+count must equal the PDF's page count, and every image the deck references
+must actually exist on disk. Page text and heading structure are recovered
+from the PDF's own text runs (the block with the page's largest font becomes
+that slide's one `<h1>`); real PDF link annotations are matched back to their
+visible text by bounding-box overlap, so attribution/credits links survive as
+real markdown links rather than being retyped by hand.
+
+Pass `--force` to deliberately replace an existing week's output (it wipes the
+old asset directory first, rather than mixing old and new slides). A page
+whose aspect ratio isn't 16:9 is reported as a warning, not an error --- `bg
+contain` letterboxes it rather than cropping, so the artwork's own proportions
+are never redesigned. `spec/deck-assets.test.ts` is the standing regression
+check: every deck's background-image references must resolve to a real source
+file and survive into the production build, since a broken `url(...)`
+reference just renders a blank slide with no build error anywhere else.
+
 ## The base path
 
 The site deploys to `https://<owner>.github.io/<repo>/`, so every internal URL
