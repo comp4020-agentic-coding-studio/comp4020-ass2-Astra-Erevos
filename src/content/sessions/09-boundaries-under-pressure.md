@@ -7,6 +7,8 @@ week: 9
 date: 2027-05-05
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you have named what your human cat actually asked for, separately from
     what a caring response should give them

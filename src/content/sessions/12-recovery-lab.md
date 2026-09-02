@@ -7,6 +7,8 @@ week: 12
 date: 2027-05-26
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - if recovering a missing or low Care Lab result, you complete an
     equivalent case exercise in full

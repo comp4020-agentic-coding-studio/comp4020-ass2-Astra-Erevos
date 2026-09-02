@@ -7,6 +7,8 @@ week: 6
 date: 2027-03-31
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - every memory you sorted names both its current state and the evidence
     that would move it to a different one

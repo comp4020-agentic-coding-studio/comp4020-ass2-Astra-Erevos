@@ -7,6 +7,8 @@ week: 3
 date: 2027-03-10
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you attempted at least two readings of the ambiguous interaction before
     choosing one

@@ -7,6 +7,8 @@ week: 2
 date: 2027-03-03
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you tagged every claim about the shared case as Observed, Inferred, or
     Unknown before the session

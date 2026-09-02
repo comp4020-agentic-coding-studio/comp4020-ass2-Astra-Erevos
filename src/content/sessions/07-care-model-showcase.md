@@ -7,6 +7,8 @@ week: 7
 date: 2027-04-21
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you bring your submitted Care Model and can point to one place it
     visibly changed

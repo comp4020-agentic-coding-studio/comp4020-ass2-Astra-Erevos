@@ -8,6 +8,8 @@ week: 8
 date: 2027-04-28
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you have named which piece of evidence you weighed most heavily, and why
   - you have named what remains genuinely uncertain, rather than resolving

@@ -7,6 +7,8 @@ week: 5
 date: 2027-03-24
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you have sorted material from your own Catwatch log into recurring
     pattern, one-off event, shared convention, and uncertain history

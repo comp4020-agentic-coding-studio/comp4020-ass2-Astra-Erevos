@@ -1,8 +1,8 @@
 ---
 title: Idris Fenn
 description:
-  A tutor working across the course's first reviews and the practical work that
-  follows them.
+  One of the three Care Lab tutors running the Weeks 2 to 12 parallel
+  groups, all teaching the same weekly content.
 affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: idris.fenn@slop.university
@@ -11,7 +11,14 @@ photo: ./idris-fenn.avif
 photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Idris Fenn tutors one of the three parallel Care Lab groups running each
+week, Weeks 2 to 12 — the small sessions where a lecture's claims meet an
+actual human-cat case, and someone has to defend their reasoning about it
+out loud. Before tutoring, they spent several years in applied observation
+work, mostly learning how confidently people report things they did not
+actually see.
 
-Replace this entry. A second person makes the listing, role ordering and
-teacher-reference fields visible before you replace the cast with your own.
+All three groups meet on the same weekly rhythm and work through the same
+task, so a question raised in one is usually worth asking your own tutor
+too rather than emailing Idris directly if you are not in his group. Email
+when a question genuinely cannot wait until the next Care Lab.

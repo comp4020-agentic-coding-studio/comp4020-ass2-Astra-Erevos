@@ -8,6 +8,8 @@ week: 11
 date: 2027-05-19
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you bring one genuine failure involving your designated human cat, not a
     manufactured example

@@ -7,6 +7,8 @@ week: 10
 date: 2027-05-12
 teachers:
   - idris-fenn
+  - mina-vale
+  - rowan-pike
 spec:
   - you have separated what was observed from what was inferred in the
     original interaction
