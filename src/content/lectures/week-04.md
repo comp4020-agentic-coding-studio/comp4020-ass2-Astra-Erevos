@@ -11,6 +11,7 @@ related:
   - assessments/catwatch
   - sessions/04-catwatch-showcase
   - assessments/care-model
+  - sessions/05-history-mapping
 ---
 
 ## From one interaction to a history
