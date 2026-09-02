@@ -11,6 +11,7 @@ slides: /decks/week-05/
 related:
   - assessments/care-model
   - assessments/know-your-cat
+  - sessions/06-memory-triage
 ---
 
 ## The claim
