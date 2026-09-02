@@ -10,6 +10,7 @@ teachers:
   - marisol-quaye
 related:
   - sessions/08-signal-conflict-lab
+  - sessions/09-boundaries-under-pressure
   - assessments/know-your-cat
 ---
 
