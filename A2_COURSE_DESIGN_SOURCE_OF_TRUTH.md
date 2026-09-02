@@ -261,7 +261,7 @@ Student-facing label:
 - Weeks 2–12: Care Labs.
 - Care Labs run in multiple timetabled groups from Wednesday onward.
 - A `session.date` is only a canonical date for the week; it does not represent one universal class time.
-- Ordinary weekly Care Lab preparation is released on the **previous Monday** and due by **Wednesday 08:30** before the earliest groups begin.
+- An ordinary Care Lab task is released on **Monday of the preceding teaching week** and is due at **08:30 on Wednesday of the following week**, before that week's earliest Care Lab group.
 - Care Labs usually practise the **previous week’s lecture**, so students are never assumed to have attended the current week’s lecture before their small class.
 - Lectures are taught by the course convenor. Care Labs are taught by the tutor(s).
 

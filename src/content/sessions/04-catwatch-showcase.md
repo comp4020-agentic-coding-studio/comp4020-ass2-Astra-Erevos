@@ -31,10 +31,12 @@ Lab having already submitted, with two things picked out of your own log:
 
 This week's session is a showcase, not a new exercise: in your timetabled
 group, each person presents their misjudged signal and their downgraded
-inference, briefly — what you thought at first, what changed, and why.
-Listening to other people's misjudgements is often more useful than
-reviewing your own; the patterns that trip up several people at once are
-usually the ones worth carrying forward deliberately.
+inference, briefly — what you thought at first, what changed, and why. Name
+which of Week 3's ideas — repetition, routine, register, or interaction
+history — explains why the signal meant something different than you first
+read it as. Listening to other people's misjudgements is often more useful
+than reviewing your own; the patterns that trip up several people at once
+are usually the ones worth carrying forward deliberately.
 
 ## Afterwards
 

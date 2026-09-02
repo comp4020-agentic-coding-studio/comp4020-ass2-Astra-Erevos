@@ -7,6 +7,9 @@ week: 3
 date: 2027-03-08
 teachers:
   - marisol-quaye
+related:
+  - assessments/catwatch
+  - sessions/04-catwatch-showcase
 ---
 
 ## A signal has no meaning on its own

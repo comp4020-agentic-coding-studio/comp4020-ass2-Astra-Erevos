@@ -1,0 +1,87 @@
+---
+/**
+ * Wraps astro-course-university's RelatedContent to disambiguate links when
+ * two graph nodes share a visible title (e.g. the Week 12 lecture and the
+ * capstone assessment both titled "Know Your Cat"): an ambiguous link is
+ * suffixed with its type, "Know Your Cat — Lecture" / "— Assessment".
+ */
+import { getRelatedEntries } from "astro-course-university/content";
+import type { GraphEntry } from "astro-course-university/content";
+import { sessionLabels } from "../site-config";
+
+interface Props {
+  entry: GraphEntry & { data: { links?: { label: string; url: string }[] } };
+  collections: string[];
+  heading?: string;
+}
+
+const { entry, collections, heading = "Related" } = Astro.props;
+const related = await getRelatedEntries(entry, collections);
+const links = entry.data.links ?? [];
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const typeLabels: Record<string, string> = {
+  lectures: "Lecture",
+  sessions: sessionLabels.singular,
+  assessments: "Assessment",
+  people: "Person",
+  policies: "Policy",
+};
+
+const titleCounts = new Map<string, number>();
+const countTitle = (t: string) => titleCounts.set(t, (titleCounts.get(t) ?? 0) + 1);
+countTitle(entry.data.title);
+for (const e of related) countTitle(e.data.title);
+
+function labelFor(e: GraphEntry): string {
+  const ambiguous = (titleCounts.get(e.data.title) ?? 0) > 1;
+  if (!ambiguous) return e.data.title;
+  return `${e.data.title} — ${typeLabels[e.collection] ?? e.collection}`;
+}
+---
+
+{
+  (related.length > 0 || links.length > 0) && (
+    <aside class="related-content" aria-label={heading}>
+      <h2>{heading}</h2>
+      <ul>
+        {related.map((e) => (
+          <li>
+            <a href={`${base}/${e.collection}/${e.id}/`}>{labelFor(e)}</a>
+          </li>
+        ))}
+        {links.map((l) => (
+          <li class="external">
+            <a href={l.url}>{l.label}</a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  )
+}
+
+<style>
+  .related-content {
+    margin-block-start: 3rem;
+    padding-block-start: 1rem;
+    border-block-start: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  }
+
+  .related-content h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .related-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .related-content .external a::after {
+    content: " \2197";
+  }
+</style>
