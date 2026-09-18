@@ -7,6 +7,7 @@ week: 7
 date: 2027-04-19
 teachers:
   - marisol-quaye
+slides: /decks/week-07/
 related:
   - sessions/07-care-model-showcase
   - sessions/08-signal-conflict-lab

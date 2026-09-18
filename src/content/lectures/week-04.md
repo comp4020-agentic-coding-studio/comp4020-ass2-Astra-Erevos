@@ -7,6 +7,7 @@ week: 4
 date: 2027-03-15
 teachers:
   - marisol-quaye
+slides: /decks/week-04/
 related:
   - assessments/catwatch
   - sessions/04-catwatch-showcase

@@ -7,6 +7,7 @@ week: 10
 date: 2027-05-10
 teachers:
   - marisol-quaye
+slides: /decks/week-10/
 related:
   - sessions/10-response-autopsy
   - sessions/11-repair-clinic

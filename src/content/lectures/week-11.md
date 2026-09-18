@@ -8,6 +8,7 @@ week: 11
 date: 2027-05-17
 teachers:
   - marisol-quaye
+slides: /decks/week-11/
 related:
   - sessions/11-repair-clinic
   - sessions/12-recovery-lab

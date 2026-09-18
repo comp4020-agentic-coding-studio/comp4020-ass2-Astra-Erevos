@@ -7,6 +7,7 @@ week: 2
 date: 2027-03-01
 teachers:
   - marisol-quaye
+slides: /decks/week-02/
 related:
   - sessions/03-observation-under-ambiguity
 ---

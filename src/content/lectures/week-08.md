@@ -8,6 +8,7 @@ week: 8
 date: 2027-04-26
 teachers:
   - marisol-quaye
+slides: /decks/week-08/
 related:
   - sessions/08-signal-conflict-lab
   - sessions/09-boundaries-under-pressure
