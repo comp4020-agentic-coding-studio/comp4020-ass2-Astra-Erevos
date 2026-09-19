@@ -57,10 +57,14 @@ should survive any future content or copy pass:
   rather than a new task, and Week 12 is a recovery/capstone clinic — keep
   these three designed exceptions when touching the Care Lab sequence.
 
-## Project-specific rules learned from the first public CI run
+## CI is real now that the repo is public
 
-- CI's `check` job only runs once the repo is public, so a check declared as
-  "only runs in CI" (links, evidence, secrets) is genuinely unverified by
-  `pnpm check` until the repo is shipped — the first `/comp4020:ship` run is
-  the first time these have ever executed for real, not a formality after
-  weeks of green runs.
+- While the repo was private, CI's `check`/`deploy` jobs were gated off
+  entirely — a push ran nothing, and `pnpm check` / `pnpm check:evidence` run
+  locally were the only real feedback loop; the first `/comp4020:ship` run was
+  the first time CI-only checks (links, evidence, secrets) ever executed for
+  real, not a formality after weeks of green runs.
+- Now that the repo is public, every push runs the real `check`/`deploy`
+  workflow — but a green CI run is not the finish line: the live GitHub Pages
+  deployment must still be verified directly, the same as any other change to
+  rendered output.

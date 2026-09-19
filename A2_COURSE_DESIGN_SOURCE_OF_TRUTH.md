@@ -171,7 +171,7 @@ Four useful categories:
 - uncertain history.
 
 ## Week 5 — Memory Is Care
-The flagship lecture and real slide deck.
+The flagship lecture — the original prototype for the deck workflow.
 
 Key claim:
 
@@ -220,7 +220,7 @@ What happens after the agent gets the cat wrong?
 
 Core sequence:
 
-**Notice → Diagnose → Repair → Update**
+**Diagnose → Acknowledge → Repair → Update**
 
 A strong long-term relationship does not require zero failures; it requires failures to change future behaviour.
 
@@ -341,7 +341,7 @@ Practises Week 10.
 
 Complete:
 
-**Diagnose → Repair → Update**
+**Diagnose → Acknowledge → Repair → Update**
 
 The repair should change the care model.
 
@@ -530,9 +530,7 @@ Do not silently reverse this into humans studying AI companions.
 
 # 11. Flagship deck: Week 5 — Memory Is Care
 
-The Week 5 lecture carries the real deck.
-
-Its slide-by-slide design will be specified separately, but the conceptual spine is already fixed:
+Week 5 was the original flagship lecture and the prototype for the deck workflow. The final course has approved decks for all twelve lectures; Week 5's conceptual spine, fixed from the start, is:
 
 1. **Your cat is not a context window.**
 2. Remembering everything is not care.
