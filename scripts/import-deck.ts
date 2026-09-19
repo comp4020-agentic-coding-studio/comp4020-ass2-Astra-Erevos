@@ -28,6 +28,7 @@ interface Args {
   pdf: string;
   force: boolean;
   quality: number;
+  allowPlaceholderText: boolean;
 }
 
 function parseArgs(argv: string[]): Args {
@@ -40,6 +41,7 @@ function parseArgs(argv: string[]): Args {
   const pdf = get("--pdf");
   const force = argv.includes("--force");
   const qualityRaw = get("--quality");
+  const allowPlaceholderText = argv.includes("--allow-placeholder-text");
 
   if (!weekRaw || !/^\d+$/.test(weekRaw)) {
     throw new Error("--week <n> is required and must be a positive integer, e.g. --week 6");
@@ -53,6 +55,7 @@ function parseArgs(argv: string[]): Args {
     pdf,
     force,
     quality: qualityRaw ? Number(qualityRaw) : 55,
+    allowPlaceholderText,
   };
 }
 
@@ -193,6 +196,10 @@ interface PageContentItem {
 interface PageAccessibleContent {
   items: PageContentItem[];
   linksPreserved: number;
+  /** True when the page's structured-text extraction returned zero blocks
+   *  (a flattened/rasterized PDF page with no live text layer), so `items`
+   *  is only the `Slide N` placeholder, not a real transcription. */
+  usedFallback: boolean;
 }
 
 /** Reduce a page's text blocks to an ordered list of heading/paragraph
@@ -207,7 +214,7 @@ function extractAccessibleContent(page: mupdf.Page, pageNumber: number): PageAcc
   const usedUris = new Set<string>();
 
   if (blocks.length === 0) {
-    return { items: [{ text: `Slide ${pageNumber}`, isHeading: true }], linksPreserved: 0 };
+    return { items: [{ text: `Slide ${pageNumber}`, isHeading: true }], linksPreserved: 0, usedFallback: true };
   }
 
   const headingBlock = blocks.reduce((max, b) => (b.maxSize > max.maxSize ? b : max), blocks[0]!);
@@ -219,7 +226,7 @@ function extractAccessibleContent(page: mupdf.Page, pageNumber: number): PageAcc
     items.unshift({ text: `Slide ${pageNumber}`, isHeading: true });
   }
 
-  return { items, linksPreserved: usedUris.size };
+  return { items, linksPreserved: usedUris.size, usedFallback: false };
 }
 
 function loadLectureFrontmatter(week: number): { title?: string } {
@@ -298,6 +305,23 @@ async function main() {
     const accessible = extractAccessibleContent(page, pageNumber);
     slides.push(accessible);
     totalLinksPreserved += accessible.linksPreserved;
+  }
+
+  const fallbackPages = slides
+    .map((slide, i) => (slide.usedFallback ? i + 1 : undefined))
+    .filter((n): n is number => n !== undefined);
+  if (fallbackPages.length > 0) {
+    const message =
+      `${basename(pdfPath)}: page(s) ${fallbackPages.join(", ")} have no extractable text layer ` +
+      `(this PDF is likely flattened/rasterized) — the accessible content for ${fallbackPages.length === 1 ? "that slide" : "those slides"} ` +
+      `will be a bare "Slide N" placeholder with no real transcription. This must be hand-repaired in the ` +
+      `generated deck before it ships (see spec/deck-accessibility.test.ts).`;
+    if (!args.allowPlaceholderText) {
+      throw new Error(
+        `${message}\nRe-run with --allow-placeholder-text to generate the deck anyway and repair it by hand.`,
+      );
+    }
+    warnings.push(message);
   }
 
   const { title: lectureTitle } = loadLectureFrontmatter(args.week);
