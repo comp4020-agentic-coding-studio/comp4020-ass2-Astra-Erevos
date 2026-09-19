@@ -8,7 +8,7 @@ role: convenor
 email: marisol.quaye@slop.university
 contact: Email for course-level questions; use your weekly Care Lab for feedback on work.
 photo: ./marisol-quaye.avif
-photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
+photoAlt: A stylised portrait of a person facing the viewer with a symmetric bob, thin round glasses and a calm, precise expression, flat olive and black shapes on warm cream, in a two-ink risograph print
 ---
 
 Marisol Quaye convenes Applied Human Cat Care and has taught it since the

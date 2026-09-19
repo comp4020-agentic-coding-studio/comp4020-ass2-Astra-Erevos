@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
@@ -29,48 +30,96 @@ const photoAlt = typeof rawPhotoAlt === "string" ? rawPhotoAlt : "";
 // Every page owes a description --- it is what a search result and a shared
 // link show underneath the title.
 const description = person.data.description;
+const photo = person.data.photo ?? undefined;
 ---
 
-<ContentLayout
-  title={person.data.title}
-  description={description}
-  heroImage={person.data.photo ?? undefined}
-  heroImageAlt={photoAlt}
-  {...siteConfig}
->
+<ContentLayout title={person.data.title} description={description} {...siteConfig}>
   <CourseAtmosphere stage="facade" seed={person.id} />
-  <dl>
-    {roleLabel && (
-      <>
-        <dt>Role</dt>
-        <dd>{roleLabel}</dd>
-      </>
+  <div class="people-profile">
+    {photo && (
+      <div class="people-portrait">
+        <Image src={photo} alt={photoAlt} width={440} height={440} format="avif" />
+      </div>
     )}
-    {person.data.affiliation && (
-      <>
-        <dt>Affiliation</dt>
-        <dd>{person.data.affiliation}</dd>
-      </>
-    )}
-    {person.data.email && (
-      <>
-        <dt>Email</dt>
-        <dd>
-          <a href={`mailto:${person.data.email}`}>{person.data.email}</a>
-        </dd>
-      </>
-    )}
-    {person.data.url && (
-      <>
-        <dt>Web</dt>
-        <dd>
-          <a href={person.data.url}>{person.data.url}</a>
-        </dd>
-      </>
-    )}
-    <dt>Contact</dt>
-    <dd>{person.data.contact}</dd>
-  </dl>
+    <dl class="people-facts">
+      {roleLabel && (
+        <>
+          <dt>Role</dt>
+          <dd>{roleLabel}</dd>
+        </>
+      )}
+      {person.data.affiliation && (
+        <>
+          <dt>Affiliation</dt>
+          <dd>{person.data.affiliation}</dd>
+        </>
+      )}
+      {person.data.email && (
+        <>
+          <dt>Email</dt>
+          <dd>
+            <a href={`mailto:${person.data.email}`}>{person.data.email}</a>
+          </dd>
+        </>
+      )}
+      {person.data.url && (
+        <>
+          <dt>Web</dt>
+          <dd>
+            <a href={person.data.url}>{person.data.url}</a>
+          </dd>
+        </>
+      )}
+      <dt>Contact</dt>
+      <dd>{person.data.contact}</dd>
+    </dl>
+  </div>
 
   <Content />
 </ContentLayout>
+
+<style>
+  .people-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: var(--at-spacing-xl);
+    margin-block-end: var(--at-spacing-lg);
+  }
+
+  .people-portrait {
+    flex: 0 0 auto;
+    width: 11rem;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: var(--at-border-radius);
+    border: 1px solid var(--at-divider);
+    box-shadow: var(--at-shadow-sm);
+  }
+
+  .people-portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .people-facts {
+    flex: 1 1 16rem;
+    margin: 0;
+  }
+
+  .people-facts dt {
+    margin-block-start: var(--at-spacing-sm);
+    font-weight: 600;
+    color: var(--at-text-secondary);
+  }
+
+  .people-facts dt:first-child {
+    margin-block-start: 0;
+  }
+
+  .people-facts dd {
+    margin: 0;
+  }
+</style>

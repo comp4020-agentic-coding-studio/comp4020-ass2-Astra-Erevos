@@ -7,6 +7,8 @@ affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: rowan.pike@slop.university
 contact: Ask during your timetabled group, or email when a question cannot wait until the next one.
+photo: ./rowan-pike.avif
+photoAlt: A stylised portrait of a person facing the viewer with short hair combed into a clean side part, square glasses and a steady smile, flat bronze and black shapes on warm cream, in a two-ink risograph print
 ---
 
 Rowan Pike tutors one of the three parallel Care Lab groups running each

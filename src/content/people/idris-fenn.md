@@ -8,7 +8,7 @@ role: tutor
 email: idris.fenn@slop.university
 contact: Ask during your timetabled group, or email when a question cannot wait until the next one.
 photo: ./idris-fenn.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
+photoAlt: A stylised portrait of a person facing the viewer with curly hair, round glasses and an open, friendly half-smile, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
 Idris Fenn tutors one of the three parallel Care Lab groups running each

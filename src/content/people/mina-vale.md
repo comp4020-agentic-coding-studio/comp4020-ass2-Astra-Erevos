@@ -7,6 +7,8 @@ affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: mina.vale@slop.university
 contact: Ask during your timetabled group, or email when a question cannot wait until the next one.
+photo: ./mina-vale.avif
+photoAlt: A stylised portrait of a person facing the viewer with long straight hair parted in the centre and worn past the shoulders, no glasses and a calm, closed smile, flat taupe and black shapes on warm cream, in a two-ink risograph print
 ---
 
 Mina Vale tutors one of the three parallel Care Lab groups running each
