@@ -117,6 +117,16 @@
   .cat-mark--note {
     font-size: 1.1rem;
   }
+
+  /* .cat-mark--small is facade-only. At this width the content gutter
+     (--at-gutter: 1rem) is narrower than the mark itself, so neither
+     repositioning nor shrinking it keeps the paw legible and inside the
+     gutter — shrinking collapses the toe pads to a few illegible pixels.
+     It's a purely decorative trace, not part of the stage progression, so
+     the simplest correct fix is to not show it on narrow viewports at all. */
+  .cat-mark--small {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
